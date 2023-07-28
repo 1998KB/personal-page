@@ -33,7 +33,10 @@ export const Landing = () => {
   return (
     <LandingContainer>
       <Avatar
-        sx={{ height: 250, width: 250 }}
+        sx={{
+          height: { xs: 150, sm: 200, lg: 250 },
+          width: { xs: 150, sm: 200, lg: 250 },
+        }}
         src={AvatarLanding}
         alt="Klajdi Beqiraj"
       />
@@ -68,7 +71,12 @@ export const Landing = () => {
       <Box sx={{ width: "80%", height: "20vh" }}>
         {showTypewriter2 && (
           <Typography
-            sx={{ color: "white", fontStyle: "italic", textAlign: "left" }}
+            sx={{
+              color: "white",
+              fontStyle: "italic",
+              textAlign: "left",
+              fontSize: { xs: 12, sm: 16, lg: 20 },
+            }}
             variant="h6"
           >
             <Typewriter
