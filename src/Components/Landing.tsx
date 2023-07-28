@@ -65,7 +65,7 @@ export const Landing = () => {
           </Typography>
         )}
       </Box>
-      <Box sx={{ width: "80%" }}>
+      <Box sx={{ width: "80%", height: "20vh" }}>
         {showTypewriter2 && (
           <Typography
             sx={{ color: "white", fontStyle: "italic", textAlign: "left" }}
