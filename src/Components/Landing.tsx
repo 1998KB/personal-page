@@ -21,7 +21,7 @@ export const Landing = () => {
 
     const timeout3 = setTimeout(() => {
       setShowTypewriter3(true);
-    }, 24000); // Set the initial delay for Typewriter 2
+    }, 21000); // Set the initial delay for Typewriter 2
 
     return () => {
       clearTimeout(timeout1);
