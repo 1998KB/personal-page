@@ -34,7 +34,7 @@ const menuItems = [
   {
     listIcon: <AppsRoundedIcon />,
     listText: "Blog",
-    listPath: "https://blog-hm52-1998kb.vercel.app",
+    listPath: "https://personal-blog-theta-virid.vercel.app",
   },
   { listIcon: <PersonIcon />, listText: "About me", listPath: "/aboutme" },
 
