@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { styled } from "styled-components";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
@@ -8,6 +8,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
 import Avatar from "../Images/AvatarNav.png";
+import Logo from "../Images/logo.webp";
 import {
   AppBar,
   Box,
@@ -39,14 +40,17 @@ const menuItems = [
   { listIcon: <PersonIcon />, listText: "About me", listPath: "/aboutme" },
   { listIcon: <EmailIcon />, listText: "Contact", listPath: "/contact" },
 ];
-
-export const Navbar = () => {
-  const [open, setOpen] = useState(false);
+interface props {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}
+export const Navbar = ({ open, setOpen }: props) => {
   const location = useLocation();
 
   const sideList = () => (
     <SideListContainer>
-      <AvatarNav src={Avatar} />
+      {/* <AvatarNav src={Avatar} /> */}
+      <img src={Logo} style={{ margin: "1em auto", height: "4em" }} />
       <Divider />
       <List>
         {menuItems.map((item, i) => (
@@ -94,22 +98,44 @@ export const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" sx={{ background: "#000", margin: 0 }}>
-          <Toolbar
-            style={{
-              width: "100%",
+        <AppBar
+          position="static"
+          sx={{ background: "rgba(0,0,0,.7)", margin: 0 }}
+        >
+          <Box
+            sx={{
               display: "flex",
-              justifyContent: "flex-end",
-              textAlign: "right",
+              width: "100%",
+              alignItems: "center",
+              justifyContent: "space-between",
             }}
           >
-            <Typography variant="h5" sx={{ color: "tan" }}>
-              {getTitle()}
-            </Typography>
-            <IconButton onClick={() => setOpen(true)}>
-              <MenuIcon sx={{ color: "white" }} />
-            </IconButton>
-          </Toolbar>
+            <Link to={"/"}>
+              <img
+                src={Logo}
+                style={{
+                  filter: "invert(100%)",
+                  height: "5em",
+                  padding: "1em 2em",
+                }}
+              />
+            </Link>
+            <Toolbar
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "flex-end",
+                textAlign: "right",
+              }}
+            >
+              <IconButton onClick={() => setOpen(true)}>
+                <Typography variant="h5" sx={{ color: "tan", pr: 1 }}>
+                  {getTitle()}
+                </Typography>
+                <MenuIcon sx={{ color: "white" }} />
+              </IconButton>
+            </Toolbar>
+          </Box>
         </AppBar>
       </Box>
       <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>

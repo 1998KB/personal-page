@@ -1,0 +1,136 @@
+.mainContainer {
+  background: rgba(0, 0, 0, 0.7);
+  padding-bottom: 100px;
+}
+
+.timeLine {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+  animation: fadeIn 1s;
+}
+
+.timeLine:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: 1px solid tan;
+  right: 40px;
+  top: 3em;
+}
+
+.timeLine:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeLineItem {
+  padding: 1rem;
+  border-bottom: 2px solid tan;
+  position: relative;
+  margin: 1rem 3rem 1rem 1rem;
+  clear: both;
+}
+
+.timeLineItem:after {
+  content: "";
+  position: absolute;
+}
+
+.timeLineItem:before {
+  content: "";
+  position: absolute;
+  right: -0.625rem;
+  top: calc(50% - 5px);
+  border-style: solid;
+  border-color: white white transparent transparent;
+  border-width: 0.625rem;
+  transform: rotate(45deg);
+}
+
+.timeLineYear {
+  text-align: center;
+  max-width: 9.375rem;
+  margin: 0 3rem 0 auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  background: white;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+}
+
+.heading {
+  color: white;
+  padding: 3rem 0;
+  text-transform: uppercase;
+}
+
+.subHeading {
+  color: white;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.body1 {
+  color: white;
+}
+
+.subtitle1 {
+  color: tan;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .timeLine {
+    padding: 2rem;
+  }
+
+  .timeLine:before {
+    left: calc(50% - 1px);
+    right: auto;
+  }
+
+  .timeLineItem {
+    width: 44%;
+    margin: 1rem;
+  }
+
+  .timeLineItem:nth-of-type(2n) {
+    float: right;
+    margin: 1rem;
+    border-color: tan;
+  }
+
+  .timeLineItem:nth-of-type(2n):before {
+    right: auto;
+    left: -0.625rem;
+    border-color: transparent transparent white white;
+  }
+
+  .timeLineYear {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .timeLineYear:nth-of-type(2n) {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .timeLineYear:nth-of-type(2n):before {
+    display: none;
+  }
+}

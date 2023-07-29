@@ -20,6 +20,7 @@ export const Projects = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        paddingTop: { lg: 5 },
       }}
     >
       <Grid
@@ -38,11 +39,11 @@ export const Projects = () => {
                 maxWidth: 470,
                 margin: { xs: "2rem auto", md: "2rem 1em" },
                 animation: "fadeIn 1s", // Apply the fadeIn animation
-                boxShadow: "0 0 8px rgba(255, 255, 255, 0.4)", // Add a box-shadow effect
+                boxShadow: "0 0 8px rgba(205, 180, 145, .4)", // Add a box-shadow effect
                 transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
                 "&:hover": {
                   transform: "scale(1.01)",
-                  boxShadow: "0 0px 16px rgba(255, 255, 255, 0.6)", // Modify the box-shadow on hover
+                  boxShadow: "0 0px 16px rgba(205, 180, 145, .6)", // Modify the box-shadow on hover
                 },
               }}
             >
@@ -53,7 +54,11 @@ export const Projects = () => {
                 image={project.image}
               />
 
-              <CardContent>
+              <CardContent
+                sx={{
+                  height: "17em",
+                }}
+              >
                 <Typography variant="h5" gutterBottom>
                   {project.name}
                 </Typography>
@@ -73,13 +78,13 @@ export const Projects = () => {
                       sx={{
                         display: "flex",
                         alignItems: "center",
-                        gap: ".5em",
+                        gap: ".3em",
                       }}
                     >
                       <Typography
                         sx={{
                           fontSize: "0.625rem",
-                          color: "rgba(205, 180, 145, 1)",
+                          color: "grey",
                         }}
                       >
                         &bull;
@@ -90,7 +95,8 @@ export const Projects = () => {
                     </Box>
                   ))}
                 </Box>
-                <Typography variant="body2" color="">
+
+                <Typography variant="body2" sx={{ mt: { xl: 4 } }}>
                   {project.description}
                 </Typography>
               </CardContent>
