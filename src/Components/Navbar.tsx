@@ -37,7 +37,6 @@ const menuItems = [
     listPath: "https://personal-blog-theta-virid.vercel.app",
   },
   { listIcon: <PersonIcon />, listText: "About me", listPath: "/aboutme" },
-
   { listIcon: <EmailIcon />, listText: "Contact", listPath: "/contact" },
 ];
 
