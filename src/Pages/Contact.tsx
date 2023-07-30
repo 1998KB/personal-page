@@ -98,7 +98,7 @@ export const Contact = () => {
           justifyContent: "center",
           alignItems: "center",
           gap: "2em",
-          height: "85vh",
+          height: { xs: "100vh", md: "85vh" },
         }}
       >
         <Box
