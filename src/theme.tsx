@@ -29,6 +29,32 @@ const theme = createTheme({
         },
       },
     },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          "&.Mui-focused": {
+            color: "white",
+          },
+          color: "tan",
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          "& .MuiOutlinedInput-notchedOutline": {
+            borderColor: "tan",
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "tan",
+          },
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            color: "#fff",
+            borderColor: "tan",
+          },
+        },
+      },
+    },
   },
 });
 

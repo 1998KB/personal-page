@@ -42,27 +42,33 @@ export const projects = [
 
 export const timelineData = [
   {
-    year: "2002",
+    title: "Mindset",
+    subtitle: "Travels & Goals",
+    body: "I am an open-minded and upbeat individual. Having extensively traveled across Europe and South America, I've encountered diverse lifestyles, all of which I find equally captivating. I continuously strive to better myself, grow, and learn. I enjoy setting high expectations as I see life as a mental game that I aim to win.",
+  },
+  {
     title: "Team Work",
     subtitle: "Athlete",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas ipsa, laudantium totam perferendis possimus voluptatibus tenetur. Quasi voluptatibus, nam vitae eaque ad, officia laboriosam repudiandae, rerum necessitatibus nisi mollitia.",
+    body: "Having played football for 17 years, team collaboration has been central to my life. Through this journey, I developed discipline, body and mind awareness. I also learned that significant achievements are a result of outstanding team efforts.",
   },
   {
-    year: "2012",
     title: "Rational Thinking",
     subtitle: "Chemical Technician",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas ipsa, laudantium totam perferendis possimus voluptatibus tenetur. Quasi voluptatibus, nam vitae eaque ad, officia laboriosam repudiandae, rerum necessitatibus nisi mollitia.",
+    body: "My background in applied mathematics and hours of experience in organic and analytical chemistry labs taught me the rational approach behind every observed fact. There's a specific, predictable process behind each phenomenon, which I find fascinating to uncover.",
   },
   {
-    year: "2002",
-    title: "Team Work",
-    subtitle: "Athlete",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas ipsa, laudantium totam perferendis possimus voluptatibus tenetur. Quasi voluptatibus, nam vitae eaque ad, officia laboriosam repudiandae, rerum necessitatibus nisi mollitia.",
+    title: "Critical Thinking",
+    subtitle: "BA Literature and Philosophy",
+    body: "My academic years were filled with countless books, each introducing unique and often contrasting perspectives on a concept or idea. These experiences have instilled in me a deep sense of prudence in selecting my words and an attentive ear to others' viewpoints.",
   },
   {
-    year: "2012",
-    title: "Rational Thinking",
-    subtitle: "Chemical Technician",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas ipsa, laudantium totam perferendis possimus voluptatibus tenetur. Quasi voluptatibus, nam vitae eaque ad, officia laboriosam repudiandae, rerum necessitatibus nisi mollitia.",
+    title: "Technical Skill",
+    subtitle: "Software Developer",
+    body: "As a full-stack developer, my knowledge may not encompass every technology currently available, but rest assured, I am quick to learn what's necessary. Backend, frontend, or even UI/UX design—I enjoy problem-solving and consider it more than just a job, it's my lifestyle.",
+  },
+  {
+    title: "Soft Skills",
+    subtitle: "Teaching & People",
+    body: "As a polyglot, I've not only learnt languages, but also acquired keys to understanding diverse souls. Teaching languages to children has honed my ability to interact with different personalities under varying stress levels. This journey has also considerably improved my public speaking skills.",
   },
 ];

@@ -8,7 +8,6 @@ export const Landing = () => {
   const [cursor, setCursor] = useState(true);
   const [showTypewriter1, setShowTypewriter1] = useState(false);
   const [showTypewriter2, setShowTypewriter2] = useState(false);
-  const [showTypewriter3, setShowTypewriter3] = useState(false);
 
   useEffect(() => {
     const timeout1 = setTimeout(() => {
@@ -17,16 +16,11 @@ export const Landing = () => {
 
     const timeout2 = setTimeout(() => {
       setShowTypewriter2(true);
-    }, 5000); // Set the initial delay for Typewriter 2
-
-    const timeout3 = setTimeout(() => {
-      setShowTypewriter3(true);
-    }, 9000); // Set the initial delay for Typewriter 2
+    }, 6500); // Set the initial delay for Typewriter 2
 
     return () => {
       clearTimeout(timeout1);
       clearTimeout(timeout2);
-      clearTimeout(timeout3);
     };
   }, []);
 
@@ -42,12 +36,7 @@ export const Landing = () => {
       />
       <Box>
         <Typography sx={{ color: "white" }} variant="h4">
-          <Typewriter
-            text={["Klajdi Beqiraj"]}
-            speed={40}
-            cursor={false}
-            delay={3000}
-          />
+          <Typewriter text={["Klajdi Beqiraj"]} speed={40} cursor={false} />
         </Typography>
         {showTypewriter1 && (
           <Typography
@@ -61,7 +50,7 @@ export const Landing = () => {
                 "Entrepreneur",
                 "Human being",
               ]}
-              speed={40}
+              speed={70}
               cursor={cursor}
               onFinished={() => setCursor(false)}
             />
@@ -79,28 +68,8 @@ export const Landing = () => {
             variant="h6"
           >
             <Typewriter
-              text={[
-                "Welcome to my personal page! 🎈 If you need anything or simply want to connect, drop me a message! 📩 ",
-              ]}
-              speed={20}
-              cursor={cursor}
-              onFinished={() => setCursor(false)}
-            />
-          </Typography>
-        )}
-        {showTypewriter3 && (
-          <Typography
-            sx={{
-              color: "white",
-              fontStyle: "italic",
-              textAlign: "center",
-              marginTop: ".5em",
-            }}
-            variant="h6"
-          >
-            <Typewriter
-              text={[" Enjoy your time here! 🎉 "]}
-              speed={35}
+              text={["Welcome to my personal page! 🎈"]}
+              speed={40}
               cursor={cursor}
               onFinished={() => setCursor(false)}
             />

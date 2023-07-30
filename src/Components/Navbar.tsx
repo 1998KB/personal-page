@@ -49,7 +49,6 @@ export const Navbar = ({ open, setOpen }: props) => {
 
   const sideList = () => (
     <SideListContainer>
-      {/* <AvatarNav src={Avatar} /> */}
       <img src={Logo} style={{ margin: "1em auto", height: "4em" }} />
       <Divider />
       <List>

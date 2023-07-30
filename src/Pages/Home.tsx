@@ -9,7 +9,7 @@ export const Home = ({ setOpen }: props) => {
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);
-    }, 11000);
+    }, 9500);
   }, []);
   return (
     <>
