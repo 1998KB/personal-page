@@ -106,6 +106,7 @@ export const Contact = () => {
             display: "flex",
             flexDirection: "column",
             gap: "1em",
+            width: "70%",
           }}
         >
           <Typography
