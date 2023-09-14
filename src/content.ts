@@ -14,7 +14,7 @@ export const projects = [
     description: `Animated 3D models & design (desktop verion) of welcome page to Spline tool.`,
     image: project9,
     technology: ["Spline", "TypeScript", "React"],
-    link: "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
+    link: "https://spline-art.vercel.app",
   },
   {
     name: "AI Chatbots App",
@@ -22,8 +22,6 @@ export const projects = [
     image: project8,
     technology: ["Expo", "Tailwind", "React Native", "TypeScript"],
     gitF: "https://github.com/CodeOnBoat/WiseMaster.git",
-    liveDemo:
-      "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
   },
   {
     name: "Convileo",
@@ -32,25 +30,30 @@ export const projects = [
     technology: ["Firebase", "Express", "React", "Node", "TypeScript"],
     gitF: "https://github.com/CodeOnBoat/convileo",
     gitB: "https://github.com/CodeOnBoat/convileo-backend",
-    link: "I contributed as a full-stack developer.",
+    link: "https://convileo-cb5be.web.app/",
   },
   {
     name: "Producteers",
-    description: `NeuroArt is an AI-driven image generator that aids in crafting compelling art. Developed with DALL-E, it offers a unique feature of writing the prompt for optimal outcomes. You can draw inspiration from others and share your masterpieces. My role was a full-stack developer and designer.`,
+    description: `Software company that offers IT services. I developed the website. `,
     image: project6,
     technology: ["Firebase", "React", "Node", "TypeScript"],
     gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
-    liveDemo:
-      "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
+    liveDemo: "https://producteers-2f010.web.app",
   },
   {
     name: "Rocket Team",
-    description: `NeuroArt is an AI-driven image generator that aids in crafting compelling art. Developed with DALL-E, it offers a unique feature of writing the prompt for optimal outcomes. You can draw inspiration from others and share your masterpieces. My role was a full-stack developer and designer.`,
+    description: `I designed and develop this landing page that offers IT services. I implemented 3D models and worked as copywriter.`,
     image: project7,
-    technology: ["Figma", "Firebase", "React", "Node", "TypeScript"],
-    gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
-    liveDemo:
-      "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
+    technology: [
+      "Figma",
+      "Firebase",
+      "React",
+      "Node",
+      "TypeScript",
+      "Tailwind",
+    ],
+    gitF: "https://github.com/CodeOnBoat/rocketteam",
+    liveDemo: "https://www.rocket-team.space/",
   },
   {
     name: "NeuroArt",

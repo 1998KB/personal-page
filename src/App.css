@@ -35,6 +35,7 @@
 
 body {
   background: url("Images/IMG_6350.jpg") no-repeat center center fixed;
+  overflow-x: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -30,7 +30,7 @@ export const Landing = () => {
         sx={{
           backgroundColor: "rgba(0,0,0,.8)",
           padding: "3em",
-          height: "35em",
+          height: { xs: "30em", md: "35em" },
           width: { xs: "90%", md: "40%" },
           borderRadius: "24px",
           display: "flex",
