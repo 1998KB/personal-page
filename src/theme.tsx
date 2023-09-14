@@ -3,10 +3,10 @@ import { createTheme } from "@mui/material";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#000", // Replace with your desired primary color
+      main: "#ffffff", // Replace with your desired primary color
     },
     secondary: {
-      main: "rgba(205, 180, 145, 1)", // Replace with your desired secondary color
+      main: "#59692e", // Replace with your desired secondary color
     },
   },
   components: {
@@ -14,7 +14,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "&:hover": {
-            backgroundColor: "rgba(205, 180, 145, .1)", // Replace with your desired hover color
+            backgroundColor: "#59692e", // Replace with your desired hover color
             // Add other hover styles here if needed
           },
         },
@@ -35,7 +35,7 @@ const theme = createTheme({
           "&.Mui-focused": {
             color: "white",
           },
-          color: "tan",
+          color: "#59692e",
         },
       },
     },
@@ -43,14 +43,14 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "tan",
+            borderColor: "#59692e",
           },
           "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: "tan",
+            borderColor: "#59692e",
           },
           "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
             color: "#fff",
-            borderColor: "tan",
+            borderColor: "#59692e",
           },
         },
       },

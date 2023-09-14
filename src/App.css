@@ -1,7 +1,43 @@
+@font-face {
+  font-family: "SequelSansHeavyHead";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Heavy\ Head.ttf");
+}
+
+@font-face {
+  font-family: "SequelSansBlackDisplay";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Black\ Disp.ttf");
+}
+
+@font-face {
+  font-family: "SequelSansLightHead";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Light\ Head.ttf");
+}
+
+@font-face {
+  font-family: "SequelSansBookBody";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Book\ Body.ttf");
+}
+
+@font-face {
+  font-family: "SequelSansBookDisplay";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Book\ Disp.ttf");
+}
+
+@font-face {
+  font-family: "SequelSansMediumHead";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Medium\ Head.ttf");
+}
+
+@font-face {
+  font-family: "SequelSansoblhead";
+  src: url("./fonts/Sequel\ Sans\ TTF/Sequel\ Sans\ Medium\ Obl\ Head.ttf");
+}
+
 body {
-  background: url("Images/background.png") no-repeat center center fixed;
+  background: url("Images/IMG_6350.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: white;
 }

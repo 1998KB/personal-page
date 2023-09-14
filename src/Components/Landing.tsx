@@ -26,55 +26,81 @@ export const Landing = () => {
 
   return (
     <LandingContainer>
-      <Avatar
+      <Box
         sx={{
-          height: { xs: 150, sm: 200, lg: 250 },
-          width: { xs: 150, sm: 200, lg: 250 },
+          backgroundColor: "rgba(0,0,0,.8)",
+          padding: "3em",
+          height: "35em",
+          width: { xs: "90%", md: "40%" },
+          borderRadius: "24px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "top",
+          borderBottom: "3px solid #59692e",
         }}
-        src={AvatarLanding}
-        alt="Klajdi Beqiraj"
-      />
-      <Box>
-        <Typography sx={{ color: "white" }} variant="h4">
-          <Typewriter text={["Klajdi Beqiraj"]} speed={40} cursor={false} />
-        </Typography>
-        {showTypewriter1 && (
+      >
+        <Avatar
+          sx={{
+            height: { xs: 150, sm: 200, lg: 250 },
+            width: { xs: 150, sm: 200, lg: 250 },
+          }}
+          src={AvatarLanding}
+          alt="Klajdi Beqiraj"
+        />
+        <Box sx={{ marginTop: "3em" }}>
           <Typography
-            sx={{ color: "tan", textTransform: "uppercase" }}
-            variant="h5"
+            sx={{ color: "white", fontFamily: "SequelSansMediumHead" }}
+            variant="h4"
           >
-            <Typewriter
-              text={[
-                "Polyglot",
-                "FullStack Developer",
-                "Entrepreneur",
-                "Human being",
-              ]}
-              speed={70}
-              cursor={cursor}
-              onFinished={() => setCursor(false)}
-            />
+            <Typewriter text={["Klajdi Beqiraj"]} speed={40} cursor={false} />
           </Typography>
-        )}
-      </Box>
-      <Box sx={{ width: "80%", height: "20vh" }}>
-        {showTypewriter2 && (
-          <Typography
-            sx={{
-              color: "white",
-              fontStyle: "italic",
-              textAlign: "center",
-            }}
-            variant="h6"
-          >
-            <Typewriter
-              text={["Welcome to my personal page! 🎈"]}
-              speed={40}
-              cursor={cursor}
-              onFinished={() => setCursor(false)}
-            />
-          </Typography>
-        )}
+          <Box sx={{ marginTop: "1em" }}>
+            {showTypewriter1 && (
+              <Typography
+                sx={{
+                  color: "#59692e ",
+                  textTransform: "uppercase",
+                  fontFamily: "SequelSansHeavyHead",
+                  marginTop: ".5em",
+                }}
+                variant="h5"
+              >
+                <Typewriter
+                  text={[
+                    "Polyglot",
+                    "FullStack Developer",
+                    "Entrepreneur",
+                    "Human being",
+                  ]}
+                  speed={70}
+                  cursor={cursor}
+                  onFinished={() => setCursor(false)}
+                />
+              </Typography>
+            )}
+          </Box>
+        </Box>
+        <Box sx={{ width: "100%", height: "3em" }}>
+          {showTypewriter2 && (
+            <Typography
+              sx={{
+                color: "white",
+                fontFamily: "SequelSansBookBody",
+                textAlign: "center",
+                marginTop: "1em",
+              }}
+              variant="h6"
+            >
+              <Typewriter
+                text={["Welcome to my personal page! 🎈"]}
+                speed={50}
+                cursor={cursor}
+                onFinished={() => setCursor(false)}
+              />
+            </Typography>
+          )}
+        </Box>
       </Box>
     </LandingContainer>
   );
@@ -90,7 +116,8 @@ const LandingContainer = styled.div`
   z-index: 1;
   gap: 2em;
   margin-top: 4em;
+
   @media (min-width: 960px) {
-    margin-top: 10em;
+    margin-top: 5em;
   }
 `;

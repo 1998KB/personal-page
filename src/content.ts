@@ -2,41 +2,92 @@ import project1 from "./Images/project1.jpg";
 import project2 from "./Images/project2.jpeg";
 import project3 from "./Images/project3.jpeg";
 import project4 from "./Images/project4.jpeg";
+import project5 from "./Images/project5.jpg";
+import project6 from "./Images/project6.jpg";
+import project7 from "./Images/project7.jpg";
+import project8 from "./Images/project8.jpeg";
+import project9 from "./Images/project9.jpeg";
+
 export const projects = [
   {
-    name: "NeuroArt",
-    description: `NeuroArt is an AI-driven image generator that aids in crafting compelling art. Developed with DALL-E, it offers a unique feature of writing the prompt for optimal outcomes. You can draw inspiration from others and share your masterpieces. My role was a full-stack developer and designer.`,
-    image: project1,
-    technology: ["Java", "SpringBoot", "TypeScript", "React", "Azure"],
-    gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
-    gitB: "https://github.com/1998KB/NeuroArt/tree/main/backend",
+    name: "Join Spline Art ",
+    description: `Animated 3D models & design (desktop verion) of welcome page to Spline tool.`,
+    image: project9,
+    technology: ["Spline", "TypeScript", "React"],
+    link: "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
+  },
+  {
+    name: "AI Chatbots App",
+    description: `Androind & IOS phone application. Three different chatbot AI-powered, speach-to-text and text-to-speach integration.`,
+    image: project8,
+    technology: ["Expo", "Tailwind", "React Native", "TypeScript"],
+    gitF: "https://github.com/CodeOnBoat/WiseMaster.git",
     liveDemo:
       "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
   },
-
+  {
+    name: "Convileo",
+    description: `Event search website. Google maps and Stripe integration. I contributed as a full-stack developer and prompt designer.`,
+    image: project5,
+    technology: ["Firebase", "Express", "React", "Node", "TypeScript"],
+    gitF: "https://github.com/CodeOnBoat/convileo",
+    gitB: "https://github.com/CodeOnBoat/convileo-backend",
+    link: "I contributed as a full-stack developer.",
+  },
+  {
+    name: "Producteers",
+    description: `NeuroArt is an AI-driven image generator that aids in crafting compelling art. Developed with DALL-E, it offers a unique feature of writing the prompt for optimal outcomes. You can draw inspiration from others and share your masterpieces. My role was a full-stack developer and designer.`,
+    image: project6,
+    technology: ["Firebase", "React", "Node", "TypeScript"],
+    gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
+    liveDemo:
+      "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
+  },
+  {
+    name: "Rocket Team",
+    description: `NeuroArt is an AI-driven image generator that aids in crafting compelling art. Developed with DALL-E, it offers a unique feature of writing the prompt for optimal outcomes. You can draw inspiration from others and share your masterpieces. My role was a full-stack developer and designer.`,
+    image: project7,
+    technology: ["Figma", "Firebase", "React", "Node", "TypeScript"],
+    gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
+    liveDemo:
+      "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view",
+  },
+  {
+    name: "NeuroArt",
+    description:
+      "AI-driven image generator with DALL-E. I worked as a full-stack developer and designer.",
+    image: project1,
+    technology: ["Java", "SpringBoot", "TypeScript", "React", "Azure"],
+    gitF: "Frontend GitHub",
+    gitB: "Backend GitHub",
+    liveDemo: "Live Demo",
+  },
   {
     name: "TaskWise",
-    description: `TaskWise is an AI-enhanced task management app. It features an AI assistant that guides you through your project and conducts research for you. Its user-friendly interface coupled with AI efficiency maximizes productivity. I served as a full-stack developer.`,
+    description:
+      "AI-enhanced task management app with guided projects. I contributed as a full-stack developer.",
     image: project2,
     technology: ["Firebase", "Express", "React", "Node", "TypeScript"],
-    gitF: "https://github.com/CodeOnBoat/Project-Manager-App-Frontend",
-    gitB: "https://github.com/CodeOnBoat/Project-Manager-App-Backend",
-    link: "https://taskwise.pro/",
+    gitF: "Frontend GitHub",
+    gitB: "Backend GitHub",
+    link: "Visit TaskWise",
   },
   {
     name: "Iconic",
-    description: `Iconic is a responsive web solution for a beauty salon. It seamlessly integrates booking, directions, and offers in a simple, user-friendly design. Although industry-specific features are limited, its focus on accessibility and responsiveness makes it stand out. I worked as a full-stack developer.`,
+    description:
+      "Responsive web solution for a beauty salon, featuring booking and directions. I worked as a full-stack developer.",
     image: project3,
     technology: ["React", "TypeScript", "Firebase"],
-    gitF: "https://github.com/CodeOnBoat/iconic-browse-and-beuty",
-    link: "https://iconicbrowsandbeauty.se/",
+    gitF: "Frontend GitHub",
+    link: "Visit Iconic",
   },
   {
     name: "Crypto Wallet",
-    description: `Crypto Wallet is a secure backend developed using Spring Security. It safeguards your cryptocurrencies and grants user permissions effectively. Although it may not offer many unique features, its focus on security is paramount. I served as a backend developer for this project.`,
+    description:
+      "Secure backend developed with Spring Security for safeguarding cryptocurrencies. I served as a backend developer.",
     image: project4,
     technology: ["Java", "SpringBoot"],
-    gitB: "https://github.com/1998KB/cryptoWallet-springBackend",
+    gitB: "Backend GitHub",
   },
 ];
 

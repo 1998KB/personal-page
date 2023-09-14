@@ -87,8 +87,8 @@ export const Contact = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "rgba(0,0,0,.7)",
         height: "100vh",
+        backgroundColor: "rgba(0,0,0,0.8)",
       }}
     >
       <Box
@@ -217,6 +217,19 @@ export const Contact = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              InputProps={{
+                sx: {
+                  "& input": {
+                    color: "white", // Text color
+                    caretColor: "white", // Cursor color
+                  },
+                },
+              }}
+              InputLabelProps={{
+                sx: {
+                  color: "white", // Label color
+                },
+              }}
             />
             <TextField
               fullWidth
@@ -225,6 +238,19 @@ export const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              InputProps={{
+                sx: {
+                  "& input": {
+                    color: "white", // Text color
+                    caretColor: "white", // Cursor color
+                  },
+                },
+              }}
+              InputLabelProps={{
+                sx: {
+                  color: "white", // Label color
+                },
+              }}
             />
             <TextField
               fullWidth
@@ -234,14 +260,25 @@ export const Contact = () => {
               rows={4}
               name="message"
               value={formData.message}
+              onChange={handleChange}
+              inputProps={{
+                style: {
+                  color: "white", // Text color
+                  caretColor: "white", // Cursor color
+                },
+              }}
+              InputLabelProps={{
+                style: {
+                  color: "white", // Label color
+                },
+              }}
             />
             <Button
               sx={{
-                color: "tan",
-                borderColor: "tan",
-                "&hover": {
-                  background: "tan",
-                  color: "white",
+                color: "white",
+                borderColor: "#59692e",
+                "&:hover": {
+                  background: "#59692e",
                 },
               }}
               type="submit"
@@ -260,7 +297,7 @@ export const Contact = () => {
                 </Typography>
               )}
               {success && (
-                <Typography style={{ color: "green" }}>
+                <Typography style={{ color: "#59692e" }}>
                   Email sent successfully!
                 </Typography>
               )}

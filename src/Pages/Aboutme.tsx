@@ -11,16 +11,31 @@ export const Aboutme = () => {
         {timelineData.map((item, idx) => (
           <React.Fragment key={idx}>
             <Box component="div" className="timeLineItem">
-              <Typography variant="h5" align="center" className="subHeading">
+              <Typography
+                variant="h5"
+                align="center"
+                className="subHeading"
+                sx={{ fontFamily: "SequelSansHeavyHead" }}
+              >
                 {item.title}
               </Typography>
-              <Typography variant="body1" align="center" className="body1">
+              <Typography
+                variant="body1"
+                align="center"
+                className="body1"
+                sx={{ fontFamily: "SequelSansMediumHead", marginTop: ".2em" }}
+              >
                 {item.subtitle}
               </Typography>
               <Typography
                 variant="subtitle1"
                 align="center"
                 className="subtitle1"
+                sx={{
+                  fontFamily: "SequelSansBookDisplay",
+                  marginTop: "1em",
+                  textAlign: "left",
+                }}
               >
                 {item.body}
               </Typography>

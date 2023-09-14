@@ -7,6 +7,8 @@ import AppsRoundedIcon from "@mui/icons-material/AppsRounded";
 import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
+import BookIcon from "@mui/icons-material/Receipt";
+
 import Avatar from "../Images/AvatarNav.png";
 import Logo from "../Images/logo.webp";
 import {
@@ -32,12 +34,19 @@ const menuItems = [
     listText: "Projects",
     listPath: "/projects",
   },
-  {
-    listIcon: <AppsRoundedIcon />,
-    listText: "Blog",
-    listPath: "https://personal-blog-theta-virid.vercel.app",
-  },
+  // {
+  //   listIcon: <AppsRoundedIcon />,
+  //   listText: "Blog",
+  //   listPath: "https://personal-blog-theta-virid.vercel.app",
+  // },
   { listIcon: <PersonIcon />, listText: "About me", listPath: "/aboutme" },
+  {
+    listIcon: <BookIcon />,
+    listText: "CV",
+    listPath:
+      "https://drive.google.com/file/d/1nR4INj2Vyj2TUbcHzCQrSXTO8oZphtTA/view?usp=share_link",
+  },
+
   { listIcon: <EmailIcon />, listText: "Contact", listPath: "/contact" },
 ];
 interface props {
@@ -56,9 +65,9 @@ export const Navbar = ({ open, setOpen }: props) => {
           <ListItem key={i} sx={{ color: "black" }}>
             <ListItemButton
               component={Link}
-              to={item.listText !== "Blog" ? item.listPath : "#"}
+              to={item.listPath.length < 10 ? item.listPath : "#"}
               onClick={() => {
-                if (item.listText === "Blog") {
+                if (item.listText === "Blog" || item.listText === "CV") {
                   window.open(item.listPath, "_blank");
                   setOpen(false);
                 } else {
@@ -96,17 +105,16 @@ export const Navbar = ({ open, setOpen }: props) => {
 
   return (
     <>
-      <Box component="nav">
-        <AppBar
-          position="static"
-          sx={{ background: "rgba(0,0,0,.7)", margin: 0 }}
-        >
+      <Box>
+        <Box position="static" sx={{ margin: 0 }}>
           <Box
             sx={{
               display: "flex",
               width: "100%",
               alignItems: "center",
               justifyContent: "space-between",
+              backgroundColor: "rgba(0,0,0,.8)",
+              borderBottom: "2px solid #59692e",
             }}
           >
             <Link to={"/"}>
@@ -128,14 +136,21 @@ export const Navbar = ({ open, setOpen }: props) => {
               }}
             >
               <IconButton onClick={() => setOpen(true)}>
-                <Typography variant="h5" sx={{ color: "tan", pr: 1 }}>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontFamily: " SequelSansoblhead",
+                    color: "#59692e",
+                    pr: 1,
+                  }}
+                >
                   {getTitle()}
                 </Typography>
                 <MenuIcon sx={{ color: "white" }} />
               </IconButton>
             </Toolbar>
           </Box>
-        </AppBar>
+        </Box>
       </Box>
       <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
         {sideList()}
