@@ -38,6 +38,7 @@ export const Landing = () => {
           alignItems: "center",
           justifyContent: "top",
           borderBottom: "3px solid #59692e",
+          marginBottom: { xs: "4em", md: "0" },
         }}
       >
         <Avatar
