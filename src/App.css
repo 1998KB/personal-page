@@ -34,11 +34,12 @@
 }
 
 body {
-  background: url("Images/IMG_6350.jpg") no-repeat center center fixed;
+  background: url("Images/fabrizio-conti-Xe-tlgPMxNQ-unsplash.jpg") no-repeat
+    center center fixed;
   overflow-x: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: contain;
+  background-size: cover;
   color: white;
 }
