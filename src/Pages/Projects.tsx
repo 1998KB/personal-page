@@ -83,13 +83,12 @@ export const Projects = () => {
                         color: "white",
                       }}
                     >
-                      <Typography
-                        sx={{
-                          fontSize: "0.625rem",
+                      <img
+                        style={{
+                          height: "1rem",
+                          width: "1rem",
                         }}
-                      >
-                        &bull;
-                      </Typography>
+                      ></img>
                       <Typography variant="body2" color="#b0b0b0">
                         {tech}
                       </Typography>

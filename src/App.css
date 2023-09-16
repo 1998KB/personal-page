@@ -37,6 +37,7 @@ body {
   background: url("Images/fabrizio-conti-Xe-tlgPMxNQ-unsplash.jpg") no-repeat
     center center fixed;
   overflow-x: hidden;
+  max-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

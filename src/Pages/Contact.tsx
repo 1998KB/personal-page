@@ -87,8 +87,13 @@ export const Contact = () => {
   return (
     <Box
       sx={{
-        height: "100vh",
-        backgroundColor: "rgba(0,0,0,0.8)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: { xs: "column", md: "row" },
+        gap: "2em",
+        height: { xs: "100vh", md: "85vh" },
+        marginY: { xs: "3em", md: "0em" },
       }}
     >
       <Box
@@ -96,214 +101,214 @@ export const Contact = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center",
-          gap: "2em",
-          height: { xs: "100vh", md: "85vh" },
+          gap: "1em",
+          width: { xs: "90%", md: "40%" },
+          padding: "1em",
+          height: { xs: "30%", md: "65%" },
+          backgroundColor: "rgba(0,0,0,0.8)",
+          borderRadius: "24px",
         }}
       >
+        <Typography
+          sx={{
+            color: "white",
+            textAlign: "center",
+          }}
+        >
+          Have something to say? I am are here to help. <br />
+          Fill up the form or send email or call phone.
+        </Typography>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
-            gap: "1em",
-            width: "70%",
+            justifyContent: "center",
           }}
         >
-          <Typography
-            sx={{
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            Have something to say? I am are here to help. <br />
-            Fill up the form or send email or call phone.
-          </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <EmailOutlined style={{ marginRight: "0.5em", color: "white" }} />
-            <a
-              href="mailto:klajdibeqiraj88@gmail.com"
-              style={{ color: "white" }}
-            >
-              klajdibeqiraj88@gmail.com
-            </a>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <PhoneOutlined style={{ marginRight: "0.5em", color: "white" }} />
-            <a href="tel:+31653329287" style={{ color: "white" }}>
-              +31 6 53329287
-            </a>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <Tabs>
-              <Tab
-                icon={<LinkedIn />}
-                sx={{
-                  "& .MuiSvgIcon-root": {
-                    fill: "white",
-                    transform: "scale(1.5)",
-
-                    transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
-                    "&:hover": {
-                      transform: "scale(1.6)",
-                    },
-                  },
-                }}
-                onClick={handleLinkedlnClick}
-              />
-              <Tab
-                icon={<GitHub />}
-                sx={{
-                  "& .MuiSvgIcon-root": {
-                    fill: "white",
-                    transform: "scale(1.5)",
-
-                    transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
-                    "&:hover": {
-                      transform: "scale(1.6)",
-                    },
-                  },
-                }}
-                onClick={handlGitHubClick}
-              />
-              <Tab
-                icon={<Instagram />}
-                sx={{
-                  "& .MuiSvgIcon-root": {
-                    fill: "white",
-                    transform: "scale(1.5)",
-
-                    transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
-                    "&:hover": {
-                      transform: "scale(1.6)",
-                    },
-                  },
-                }}
-                onClick={handleInstagramClick}
-              />
-            </Tabs>
-          </Box>
+          <EmailOutlined style={{ marginRight: "0.5em", color: "white" }} />
+          <a href="mailto:klajdibeqiraj88@gmail.com" style={{ color: "white" }}>
+            klajdibeqiraj88@gmail.com
+          </a>
         </Box>
-        <Box sx={{ width: { xs: "70%", lg: "50%" } }}>
-          <form
-            onSubmit={handleSubmit}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-              gap: "1em",
-            }}
-          >
-            <TextField
-              fullWidth
-              label="Name"
-              variant="outlined"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              InputProps={{
-                sx: {
-                  "& input": {
-                    color: "white", // Text color
-                    caretColor: "white", // Cursor color
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <PhoneOutlined style={{ marginRight: "0.5em", color: "white" }} />
+          <a href="tel:+31653329287" style={{ color: "white" }}>
+            +31 6 53329287
+          </a>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Tabs>
+            <Tab
+              icon={<LinkedIn />}
+              sx={{
+                "& .MuiSvgIcon-root": {
+                  fill: "white",
+                  transform: "scale(1.5)",
+
+                  transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
+                  "&:hover": {
+                    transform: "scale(1.6)",
                   },
                 },
               }}
-              InputLabelProps={{
-                sx: {
-                  color: "white", // Label color
-                },
-              }}
+              onClick={handleLinkedlnClick}
             />
-            <TextField
-              fullWidth
-              label="Email"
-              variant="outlined"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              InputProps={{
-                sx: {
-                  "& input": {
-                    color: "white", // Text color
-                    caretColor: "white", // Cursor color
+            <Tab
+              icon={<GitHub />}
+              sx={{
+                "& .MuiSvgIcon-root": {
+                  fill: "white",
+                  transform: "scale(1.5)",
+
+                  transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
+                  "&:hover": {
+                    transform: "scale(1.6)",
                   },
                 },
               }}
-              InputLabelProps={{
-                sx: {
-                  color: "white", // Label color
+              onClick={handlGitHubClick}
+            />
+            <Tab
+              icon={<Instagram />}
+              sx={{
+                "& .MuiSvgIcon-root": {
+                  fill: "white",
+                  transform: "scale(1.5)",
+
+                  transition: "box-shadow 0.3s ease, transform 0.3s ease", // Add transitions for smooth effects
+                  "&:hover": {
+                    transform: "scale(1.6)",
+                  },
                 },
               }}
+              onClick={handleInstagramClick}
             />
-            <TextField
-              fullWidth
-              label="Message"
-              variant="outlined"
-              multiline
-              rows={4}
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              inputProps={{
-                style: {
+          </Tabs>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          width: { xs: "90%", md: "40%" },
+          height: { xs: "65%", md: "65%" },
+          backgroundColor: "rgba(0,0,0,0.8)",
+          borderRadius: "24px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "80%",
+            height: "80%",
+            gap: "1em",
+          }}
+        >
+          <TextField
+            fullWidth
+            label="Name*"
+            variant="outlined"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            InputProps={{
+              sx: {
+                "& input": {
                   color: "white", // Text color
                   caretColor: "white", // Cursor color
                 },
-              }}
-              InputLabelProps={{
-                style: {
-                  color: "white", // Label color
+              },
+            }}
+            InputLabelProps={{
+              sx: {
+                color: "white", // Label color
+              },
+            }}
+          />
+          <TextField
+            fullWidth
+            label="Email*"
+            variant="outlined"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            InputProps={{
+              sx: {
+                "& input": {
+                  color: "white", // Text color
+                  caretColor: "white", // Cursor color
                 },
-              }}
-            />
-            <Button
-              sx={{
-                color: "white",
-                borderColor: "#59692e",
-                "&:hover": {
-                  background: "#59692e",
-                },
-              }}
-              type="submit"
-              variant="outlined"
-              fullWidth
-              endIcon={<SendIcon />}
-            >
-              Contact Me
-            </Button>
-            <Box
-              style={{ height: "1em", marginTop: "1em", textAlign: "center" }}
-            >
-              {error && (
-                <Typography style={{ color: "red" }}>
-                  Please fill in all fields
-                </Typography>
-              )}
-              {success && (
-                <Typography style={{ color: "#59692e" }}>
-                  Email sent successfully!
-                </Typography>
-              )}
-            </Box>
-          </form>
-        </Box>
+              },
+            }}
+            InputLabelProps={{
+              sx: {
+                color: "white", // Label color
+              },
+            }}
+          />
+          <TextField
+            fullWidth
+            label="Message*"
+            variant="outlined"
+            multiline
+            rows={4}
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            inputProps={{
+              style: {
+                color: "white", // Text color
+                caretColor: "white", // Cursor color
+              },
+            }}
+            InputLabelProps={{
+              style: {
+                color: "white", // Label color
+              },
+            }}
+          />
+          <Button
+            sx={{
+              color: "white",
+              borderColor: "#59692e",
+              "&:hover": {
+                background: "#59692e",
+              },
+            }}
+            type="submit"
+            variant="outlined"
+            fullWidth
+            endIcon={<SendIcon />}
+          >
+            Contact Me
+          </Button>
+          <Box style={{ height: "1em", marginTop: "1em", textAlign: "center" }}>
+            {error && (
+              <Typography style={{ color: "red" }}>
+                Please fill in all fields
+              </Typography>
+            )}
+            {success && (
+              <Typography style={{ color: "#59692e" }}>
+                Email sent successfully!
+              </Typography>
+            )}
+          </Box>
+        </form>
       </Box>
     </Box>
   );
