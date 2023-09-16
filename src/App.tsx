@@ -20,7 +20,7 @@ function App() {
         <img
           src={background}
           style={{
-            height: "120%",
+            height: "100%",
             width: "100%",
             zIndex: "-10",
             position: "fixed",
