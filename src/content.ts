@@ -23,6 +23,23 @@ import Node from "./Images/techIcons/node.png";
 import Mui from "./Images/techIcons/mui.png";
 import SQL from "./Images/techIcons/sql.png";
 
+export const stack = [
+  { name: "Typescript", icon: Typescript },
+  { name: "Expo", icon: Expo },
+  { name: "Tailwind", icon: Tailwind },
+  { name: "Native", icon: Native },
+  { name: "React", icon: React },
+  { name: "Firebase", icon: Firebase },
+  { name: "Express", icon: Express },
+  { name: "Figma", icon: Figma },
+  { name: "Java", icon: Java },
+  { name: "Azure", icon: Azure },
+  { name: "Spline", icon: Spline },
+  { name: "Springboot", icon: Springboot },
+  { name: "Node", icon: Node },
+  { name: "Mui", icon: Mui },
+  { name: "SQL", icon: SQL },
+];
 export const projects = [
   {
     name: "Join Spline Art ",
