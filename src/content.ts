@@ -81,7 +81,7 @@ export const projects = [
   {
     name: "Rocket Team",
     description:
-      "I designed and developed this web to offers IT services. I implemented 3D models and worked as a copywriter.",
+      "I designed and developed this web to offer IT services. I implemented 3D models and worked as a copywriter.",
     image: project7,
     technology: [
       { name: "Figma", icon: Figma },
