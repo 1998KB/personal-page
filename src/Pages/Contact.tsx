@@ -94,7 +94,7 @@ export const Contact = () => {
           alignItems: "center",
           flexDirection: { xs: "column", md: "row" },
           gap: "2em",
-          height: { xs: "100vh", md: "85vh" },
+          height: { xs: "130vh", md: "85vh" },
           marginY: { xs: "3em", md: "0em" },
         }}
       >
@@ -217,7 +217,7 @@ export const Contact = () => {
         <Box
           sx={{
             width: { xs: "90%", md: "40%" },
-            height: { xs: "95%", md: "65%" },
+            height: { xs: "100%", md: "65%" },
             backgroundColor: "rgba(0,0,0,0.8)",
             borderRadius: "24px",
             display: "flex",
