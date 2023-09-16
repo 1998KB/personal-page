@@ -7,60 +7,106 @@ import project6 from "./Images/project6.jpg";
 import project7 from "./Images/project7.jpg";
 import project8 from "./Images/project8.jpeg";
 import project9 from "./Images/project9.jpeg";
+import Typescript from "./Images/techIcons/typescript.png";
+import Expo from "./Images/techIcons/expo.png";
+import Tailwind from "./Images/techIcons/tailwind.png";
+import Native from "./Images/techIcons/reactnative.png";
+import React from "./Images/techIcons/react.png";
+import Firebase from "./Images/techIcons/firebase.png";
+import Express from "./Images/techIcons/express.png";
+import Figma from "./Images/techIcons/figma.png";
+import Java from "./Images/techIcons/java.png";
+import Azure from "./Images/techIcons/azure.png";
+import Spline from "./Images/techIcons/spline.png";
+import Springboot from "./Images/techIcons/springboot.png";
+import Node from "./Images/techIcons/node.png";
+import Mui from "./Images/techIcons/mui.png";
+import SQL from "./Images/techIcons/sql.png";
 
 export const projects = [
   {
     name: "Join Spline Art ",
     description: `Animated 3D models & design (desktop verion) of welcome page to Spline tool.`,
     image: project9,
-    technology: ["Spline", "TypeScript", "React"],
+    technology: [
+      { name: "Spline", icon: Spline },
+      { name: "TypeScript", icon: Typescript },
+      { name: "React", icon: React },
+    ],
     link: "https://spline-art.vercel.app",
   },
   {
     name: "AI Chatbots App",
     description: `Androind & IOS phone application. Three different chatbot AI-powered, speach-to-text and text-to-speach integration.`,
     image: project8,
-    technology: ["Expo", "Tailwind", "React Native", "TypeScript"],
+    technology: [
+      { name: "Expo", icon: Expo },
+      { name: "Tailwind", icon: Tailwind },
+      { name: "React Native", icon: Native },
+      { name: "TypeScript", icon: Typescript },
+    ],
     gitF: "https://github.com/CodeOnBoat/WiseMaster.git",
   },
   {
     name: "Convileo",
-    description: `Event search website. Google maps and Stripe integration. I contributed as a full-stack developer and prompt designer.`,
+    description:
+      "Event search website. Google maps and Stripe integration. I contributed as a full-stack developer and prompt designer.",
     image: project5,
-    technology: ["Firebase", "Express", "React", "Node", "TypeScript"],
+    technology: [
+      { name: "Firebase", icon: Firebase },
+      { name: "Express", icon: Express },
+      { name: "React", icon: React },
+      { name: "Node", icon: Node },
+      { name: "TypeScript", icon: Typescript },
+      { name: "Mui", icon: Mui },
+    ],
     gitF: "https://github.com/CodeOnBoat/convileo",
     gitB: "https://github.com/CodeOnBoat/convileo-backend",
     link: "https://convileo-cb5be.web.app/",
   },
-  {
-    name: "Producteers",
-    description: `Software company that offers IT services. I developed the website. `,
-    image: project6,
-    technology: ["Firebase", "React", "Node", "TypeScript"],
-    gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
-    liveDemo: "https://producteers-2f010.web.app",
-  },
+  // {
+  //   name: "Producteers",
+  //   description:
+  //     "Software company that offers IT services. I developed the website.",
+  //   image: "project6",
+  //   technologies: [
+  //     { name: "Firebase", icon: Firebase },
+  //     { name: "React", icon: React },
+  //     { name: "Node", icon: Node },
+  //     { name: "TypeScript", icon: TypeScript },
+  //   ],
+  //   gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
+  //   liveDemo: "https://producteers-2f010.web.app",
+  // },
   {
     name: "Rocket Team",
-    description: `I designed and develop this landing page that offers IT services. I implemented 3D models and worked as copywriter.`,
+    description:
+      "I designed and developed this web to offers IT services. I implemented 3D models and worked as a copywriter.",
     image: project7,
     technology: [
-      "Figma",
-      "Firebase",
-      "React",
-      "Node",
-      "TypeScript",
-      "Tailwind",
+      { name: "Figma", icon: Figma },
+      { name: "Firebase", icon: Firebase },
+      { name: "React", icon: React },
+      { name: "Node", icon: Node },
+      { name: "TypeScript", icon: Typescript },
+      { name: "Tailwind", icon: Tailwind },
     ],
     gitF: "https://github.com/CodeOnBoat/rocketteam",
-    liveDemo: "https://www.rocket-team.space/",
+    link: "https://www.rocket-team.space/",
   },
   {
     name: "NeuroArt",
     description:
       "AI-driven image generator with DALL-E. I worked as a full-stack developer and designer.",
     image: project1,
-    technology: ["Java", "SpringBoot", "TypeScript", "React", "Azure"],
+    technology: [
+      { name: "Java", icon: Java },
+      { name: "SpringBoot", icon: Springboot },
+      { name: "TypeScript", icon: Typescript },
+      { name: "React", icon: React },
+      { name: "Azure", icon: Azure },
+      { name: "SQL", icon: SQL },
+    ],
     gitF: "Frontend GitHub",
     gitB: "Backend GitHub",
     liveDemo: "Live Demo",
@@ -70,7 +116,13 @@ export const projects = [
     description:
       "AI-enhanced task management app with guided projects. I contributed as a full-stack developer.",
     image: project2,
-    technology: ["Firebase", "Express", "React", "Node", "TypeScript"],
+    technology: [
+      { name: "Firebase", icon: Firebase },
+      { name: "Express", icon: Express },
+      { name: "React", icon: React },
+      { name: "Node", icon: Node },
+      { name: "TypeScript", icon: Typescript },
+    ],
     gitF: "Frontend GitHub",
     gitB: "Backend GitHub",
     link: "Visit TaskWise",
@@ -80,16 +132,23 @@ export const projects = [
     description:
       "Responsive web solution for a beauty salon, featuring booking and directions. I worked as a full-stack developer.",
     image: project3,
-    technology: ["React", "TypeScript", "Firebase"],
+    technology: [
+      { name: "React", icon: React },
+      { name: "TypeScript", icon: Typescript },
+      { name: "Firebase", icon: Firebase },
+    ],
     gitF: "Frontend GitHub",
-    link: "Visit Iconic",
+    link: "https://iconicbrowsandbeauty.se",
   },
   {
     name: "Crypto Wallet",
     description:
       "Secure backend developed with Spring Security for safeguarding cryptocurrencies. I served as a backend developer.",
     image: project4,
-    technology: ["Java", "SpringBoot"],
+    technology: [
+      { name: "Java", icon: Java },
+      { name: "SpringBoot", icon: Springboot },
+    ],
     gitB: "Backend GitHub",
   },
 ];

@@ -24,7 +24,7 @@ const theme = createTheme({
       styleOverrides: {
         groupedHorizontal: {
           "&:not(:last-child)": {
-            borderColor: "rgba(0,0,0,.3)", // Change the border color here
+            borderColor: "transparent", // Change the border color here
           },
         },
       },

@@ -19,7 +19,12 @@ function App() {
         <CssBaseline />
         <img
           src={background}
-          style={{ height: "100vh", zIndex: "-10", position: "fixed" }}
+          style={{
+            height: "100vh",
+            width: "100%",
+            zIndex: "-10",
+            position: "fixed",
+          }}
         />
         <Navbar open={open} setOpen={setOpen} />
         <Routes>

@@ -11,6 +11,10 @@ import {
 } from "@mui/material";
 import { projects } from "../content";
 import "../styles.css";
+import Link from "../Images/link.png";
+import Live from "../Images/live.png";
+
+import { GitHub } from "@mui/icons-material";
 
 export const Projects = () => {
   return (
@@ -36,6 +40,8 @@ export const Projects = () => {
             <Card
               sx={{
                 backgroundColor: "rgba(0,0,0,0.8)",
+                cursor:
+                  project.link || project.liveDemo ? "pointer" : "default",
                 borderRadius: "24px",
                 maxWidth: 470,
                 margin: { xs: "2rem auto", md: "2rem 1em" },
@@ -44,6 +50,16 @@ export const Projects = () => {
                 "&:hover": {
                   transform: "scale(1.01)",
                 },
+              }}
+              onClick={() => {
+                if (project.link) {
+                  window.open(project.link, "_blank");
+                }
+                if (project.liveDemo) {
+                  window.open(project.liveDemo, "_blank");
+                } else {
+                  return 0;
+                }
               }}
             >
               <CardMedia
@@ -56,22 +72,27 @@ export const Projects = () => {
 
               <CardContent
                 sx={{
-                  height: "10em",
+                  height: "14em",
                 }}
               >
-                <Typography sx={{ color: "white" }} variant="h5" gutterBottom>
+                <Typography
+                  sx={{ color: "white", fontFamily: "SequelSansMediumHead" }}
+                  variant="h5"
+                  gutterBottom
+                >
                   {project.name}
                 </Typography>
                 <Box
                   sx={{
-                    marginTop: ".5rem",
-                    marginBottom: ".5rem",
+                    marginTop: ".8rem",
+                    marginBottom: ".8rem",
                     flexWrap: "wrap",
                     display: "flex",
                     width: "100%",
                     gap: "1em",
                     alignItems: "center",
                     color: "#b0b0b0",
+                    height: "2.6em",
                   }}
                 >
                   {project.technology.map((tech, i) => (
@@ -79,18 +100,22 @@ export const Projects = () => {
                       sx={{
                         display: "flex",
                         alignItems: "center",
-                        gap: ".3em",
+                        gap: ".5em",
                         color: "white",
                       }}
                     >
                       <img
                         style={{
-                          height: "1rem",
-                          width: "1rem",
+                          height: "1.3em",
+                          width: "1.3em",
                         }}
-                      ></img>
-                      <Typography variant="body2" color="#b0b0b0">
-                        {tech}
+                        src={tech.icon}
+                      />
+                      <Typography
+                        sx={{ fontFamily: "SequelSansBookDisplay" }}
+                        color="#b0b0b0"
+                      >
+                        {tech.name}
                       </Typography>
                     </Box>
                   ))}
@@ -99,7 +124,7 @@ export const Projects = () => {
                 <Typography
                   variant="body2"
                   color="white"
-                  sx={{ mt: { xl: 4 } }}
+                  sx={{ mt: 5, fontFamily: "SequelSansBookBody" }}
                 >
                   {project.description}
                 </Typography>
@@ -110,28 +135,40 @@ export const Projects = () => {
                   size="small"
                   color="primary"
                   aria-label="text button group"
-                  sx={{ justifyContent: "space-evenly", width: "100%" }}
+                  sx={{
+                    justifyContent: "space-evenly",
+                    width: "100%",
+                    alignItems: "end",
+                  }}
                 >
                   {project.liveDemo && (
                     <Button
                       style={{
                         borderRadius: "12px",
                         width: "100%",
-                        minHeight: "5em",
+                        height: "3em",
                         color: "#b0b0b0",
                       }}
                       size="small"
                       color="primary"
                       onClick={() => window.open(project.liveDemo, "_blank")}
                     >
-                      Live Demo
+                      <img
+                        style={{
+                          height: "2em",
+                          width: "2em",
+                          marginRight: ".5em",
+                        }}
+                        src={Live}
+                      />
+                      Demo
                     </Button>
                   )}
                   {project.link && (
                     <Button
                       style={{
                         width: "100%",
-                        height: "5em",
+                        height: "3em",
                         color: "#b0b0b0",
                         borderRadius: "12px",
                       }}
@@ -139,6 +176,14 @@ export const Projects = () => {
                       color="primary"
                       onClick={() => window.open(project.link, "_blank")}
                     >
+                      <img
+                        style={{
+                          height: "2em",
+                          width: "2em",
+                          marginRight: ".5em",
+                        }}
+                        src={Link}
+                      />
                       Link
                     </Button>
                   )}
@@ -146,7 +191,7 @@ export const Projects = () => {
                     <Button
                       style={{
                         width: "100%",
-                        height: "5em",
+                        height: "3em",
                         color: "#b0b0b0",
                         borderRadius: "12px",
                       }}
@@ -154,14 +199,15 @@ export const Projects = () => {
                       color="primary"
                       onClick={() => window.open(project.gitF, "_blank")}
                     >
-                      GitHub Frontend
+                      <GitHub style={{ color: "white", marginRight: ".5em" }} />
+                      Frontend
                     </Button>
                   )}
                   {project.gitB && (
                     <Button
                       style={{
                         width: "100%",
-                        height: "5em",
+                        height: "3em",
                         color: "#b0b0b0",
                         borderRadius: "12px",
                       }}
@@ -169,7 +215,8 @@ export const Projects = () => {
                       color="primary"
                       onClick={() => window.open(project.gitB, "_blank")}
                     >
-                      GitHub Backend
+                      <GitHub style={{ color: "white", marginRight: ".5em" }} />
+                      Backend
                     </Button>
                   )}
                 </ButtonGroup>
