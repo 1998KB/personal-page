@@ -217,7 +217,7 @@ export const Contact = () => {
         <Box
           sx={{
             width: { xs: "90%", md: "40%" },
-            height: { xs: "85%", md: "65%" },
+            height: { xs: "95%", md: "65%" },
             backgroundColor: "rgba(0,0,0,0.8)",
             borderRadius: "24px",
             display: "flex",
