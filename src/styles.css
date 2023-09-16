@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0.2;
     transform: translateY(200px);
@@ -10,5 +10,5 @@
 }
 
 .cardContainer {
-  animation: fadeIn 1s; /* Apply the fadeIn animation */
-}
+  animation: fadeIn 1s; 
+} */
