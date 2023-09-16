@@ -6,7 +6,7 @@ import project5 from "./Images/project5.jpg";
 import project6 from "./Images/project6.jpg";
 import project7 from "./Images/project7.jpg";
 import project8 from "./Images/project8.jpeg";
-import project9 from "./Images/project9.jpeg";
+import project9 from "./Images/project9.png";
 import Typescript from "./Images/techIcons/typescript.png";
 import Expo from "./Images/techIcons/expo.png";
 import Tailwind from "./Images/techIcons/tailwind.png";

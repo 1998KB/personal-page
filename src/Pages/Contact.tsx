@@ -104,7 +104,7 @@ export const Contact = () => {
           gap: "1em",
           width: { xs: "90%", md: "40%" },
           padding: "1em",
-          height: { xs: "30%", md: "65%" },
+          height: { xs: "40%", md: "65%" },
           backgroundColor: "rgba(0,0,0,0.8)",
           borderRadius: "24px",
         }}
@@ -113,10 +113,21 @@ export const Contact = () => {
           sx={{
             color: "white",
             textAlign: "center",
+            fontFamily: "SequelSansHeavyHead",
+            fontSize: "2.5em",
           }}
         >
-          Have something to say? I am are here to help. <br />
-          Fill up the form or send email or call phone.
+          Hello!
+        </Typography>
+        <Typography
+          sx={{
+            color: "white",
+            textAlign: "center",
+            fontFamily: "SequelSansBookBody",
+          }}
+        >
+          Have something to say? I am are here to help! <br />
+          Fill up the form, send me email or just call.
         </Typography>
         <Box
           sx={{
@@ -125,7 +136,10 @@ export const Contact = () => {
           }}
         >
           <EmailOutlined style={{ marginRight: "0.5em", color: "white" }} />
-          <a href="mailto:klajdibeqiraj88@gmail.com" style={{ color: "white" }}>
+          <a
+            href="mailto:klajdibeqiraj88@gmail.com"
+            style={{ color: "white", fontFamily: "SequelSansBookBody" }}
+          >
             klajdibeqiraj88@gmail.com
           </a>
         </Box>
@@ -136,7 +150,10 @@ export const Contact = () => {
           }}
         >
           <PhoneOutlined style={{ marginRight: "0.5em", color: "white" }} />
-          <a href="tel:+31653329287" style={{ color: "white" }}>
+          <a
+            href="tel:+31653329287"
+            style={{ color: "white", fontFamily: "SequelSansBookBody" }}
+          >
             +31 6 53329287
           </a>
         </Box>
@@ -227,6 +244,7 @@ export const Contact = () => {
             onChange={handleChange}
             InputProps={{
               sx: {
+                fontFamily: "SequelSansBookBody",
                 "& input": {
                   color: "white", // Text color
                   caretColor: "white", // Cursor color
@@ -235,6 +253,7 @@ export const Contact = () => {
             }}
             InputLabelProps={{
               sx: {
+                fontFamily: "SequelSansBookBody",
                 color: "white", // Label color
               },
             }}
@@ -248,6 +267,8 @@ export const Contact = () => {
             onChange={handleChange}
             InputProps={{
               sx: {
+                fontFamily: "SequelSansBookBody",
+
                 "& input": {
                   color: "white", // Text color
                   caretColor: "white", // Cursor color
@@ -256,6 +277,7 @@ export const Contact = () => {
             }}
             InputLabelProps={{
               sx: {
+                fontFamily: "SequelSansBookBody",
                 color: "white", // Label color
               },
             }}
@@ -271,18 +293,23 @@ export const Contact = () => {
             onChange={handleChange}
             inputProps={{
               style: {
+                fontFamily: "SequelSansBookBody",
+
                 color: "white", // Text color
                 caretColor: "white", // Cursor color
               },
             }}
             InputLabelProps={{
               style: {
+                fontFamily: "SequelSansBookBody",
                 color: "white", // Label color
               },
             }}
           />
           <Button
             sx={{
+              fontFamily: "SequelSansBookDisplay",
+
               color: "white",
               borderColor: "#59692e",
               "&:hover": {
