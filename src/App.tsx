@@ -8,6 +8,7 @@ import { Navbar } from "./Components/Navbar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { useEffect, useState } from "react";
+import background from "./Images/fabrizio-conti-Xe-tlgPMxNQ-unsplash.jpg";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -16,6 +17,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <CssBaseline />
+        <img
+          src={background}
+          style={{ height: "100vh", zIndex: "-10", position: "fixed" }}
+        />
         <Navbar open={open} setOpen={setOpen} />
         <Routes>
           <Route path="/" element={<Home setOpen={setOpen} />} />
