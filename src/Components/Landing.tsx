@@ -1,7 +1,7 @@
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { styled } from "styled-components";
-import AvatarLanding from "../Images/AvatarNav.png";
+import AvatarLanding from "../Images/AvatarNav.webp";
 import Typewriter from "react-ts-typewriter";
 
 export const Landing = () => {
