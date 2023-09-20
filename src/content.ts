@@ -184,7 +184,7 @@ export const timelineData = [
   {
     title: "My Story",
     subtitle: "Synossis",
-    body: "I am 25 years old guy from Albania and currently livining in Sweden. I like nature, travels, sports and .",
+    body: "I am 25 years old guy from Albania and I am currently livining in Sweden. I like nature, travels, sports and being around proactive people in positive environments.",
   },
   {
     title: "Mindset",
@@ -199,7 +199,7 @@ export const timelineData = [
   {
     title: "Technical Skill",
     subtitle: "Software Developer",
-    body: "As a full-stack developer, my knowledge may not encompass every technology currently available, but rest assured, I am quick to learn what's necessary. Backend, frontend, or even UI/UX design—I enjoy problem-solving and consider it more than just a job, it's my lifestyle.",
+    body: "Backend, frontend, or even UI/UX design, I enjoy problem-solving, it more than just a job it's a lifestyle. I am a quick learner and always curious and intersted to learn new concepts or technologies.",
   },
   {
     title: "Tools & Technologies",
@@ -257,7 +257,6 @@ export const timelineData = [
       { name: "Expo", icon: Expo },
       { name: "Figma", icon: Figma },
       { name: "Spline", icon: Spline },
-      { name: "Mocha", icon: Figma },
       { name: "Cypress", icon: Cypress },
     ],
   },
