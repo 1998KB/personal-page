@@ -8,7 +8,7 @@ import { Navbar } from "./Components/Navbar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { useEffect, useState } from "react";
-import background from "./Images/fabrizio-conti-Xe-tlgPMxNQ-unsplash.jpg";
+import background from "./Images/fabrizio-conti-Xe-tlgPMxNQ-unsplash-2.webp";
 
 function App() {
   const [open, setOpen] = useState(false);

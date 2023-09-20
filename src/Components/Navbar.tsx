@@ -8,6 +8,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
 import BookIcon from "@mui/icons-material/Receipt";
+import CurriculumKlajdi from "./CV-6.pdf";
 
 import Avatar from "../Images/AvatarNav.png";
 import Logo from "../Images/logo.webp";
@@ -43,8 +44,7 @@ const menuItems = [
   {
     listIcon: <BookIcon />,
     listText: "CV",
-    listPath:
-      "https://drive.google.com/file/d/1nR4INj2Vyj2TUbcHzCQrSXTO8oZphtTA/view?usp=share_link",
+    listPath: CurriculumKlajdi,
   },
 
   { listIcon: <EmailIcon />, listText: "Contact", listPath: "/contact" },
