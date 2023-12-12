@@ -50,6 +50,17 @@ import Maven from "./Images/techIcons/Maven.png";
 
 export const projects = [
   {
+    name: "Nordic Elite",
+    description: `Animated 3D models & design (desktop verion) of welcome page to Spline tool.`,
+    image: project9,
+    technology: [
+      { name: "TypeScript", icon: Typescript },
+      { name: "React", icon: React },
+      { name: "Spline", icon: Spline },
+    ],
+    link: "https://spline-art.vercel.app",
+  },
+  {
     name: "Join Spline Art ",
     description: `Animated 3D models & design (desktop verion) of welcome page to Spline tool.`,
     image: project9,
@@ -89,20 +100,20 @@ export const projects = [
     gitB: "https://github.com/CodeOnBoat/convileo-backend",
     link: "https://convileo-cb5be.web.app/",
   },
-  // {
-  //   name: "Producteers",
-  //   description:
-  //     "Software company that offers IT services. I developed the website.",
-  //   image: "project6",
-  //   technologies: [
-  //     { name: "Firebase", icon: Firebase },
-  //     { name: "React", icon: React },
-  //     { name: "Node", icon: Node },
-  //     { name: "TypeScript", icon: TypeScript },
-  //   ],
-  //   gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
-  //   liveDemo: "https://producteers-2f010.web.app",
-  // },
+  {
+    name: "Producteers",
+    description:
+      "Software company that offers IT services. I developed the website.",
+    image: project6,
+    technology: [
+      { name: "Firebase", icon: Firebase },
+      { name: "React", icon: React },
+      { name: "Node", icon: Node },
+      { name: "TypeScript", icon: Typescript },
+    ],
+    gitF: "https://github.com/1998KB/NeuroArt/tree/main/frontend",
+    liveDemo: "https://producteers-2f010.web.app",
+  },
   {
     name: "Rocket Team",
     description:
